@@ -1,0 +1,294 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.list-items {
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    /* border: solid; */
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.links:hover {
+    /* text-decoration: underline;
+    color: red; */
+    color: white;
+    background-color: green;
+    
+}
+
+.home-contents {
+    margin: 13% 0px 0px 125px;
+}
+
+#username {
+    font-family: "Playwrite HU", cursive;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+#lname {
+    font-family: "Playwrite HU", cursive;
+    color: green
+}
+
+#brochure {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.home-image {
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.grp1 {
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+
+.home-image:hover #shape {
+    bottom: 80px;
+}
+
+.home-image:hover #girl {
+    left: 40%;
+}
+
+#about {
+    margin: 350px 80px 0px 8%;
+}
+
+.sectionhead {
+    text-align: center;
+}
+
+.mainhead {
+    font-size: 50px;
+    color: green;
+}
+
+.subhead {
+    font-size: 30px;
+    color: blue
+}
+
+.aboutbody {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.aboutbody>.about-img {
+    text-align: center;
+}
+
+.about-img {
+    height: 100%;
+    width: 300px;
+}
+
+.information {
+    margin-top: 1.3rem;
+}
+
+.infobox {
+    margin-bottom: 10px;
+}
+
+.infobox>span {
+    margin-left: 1rem;
+}
+
+#skills {
+    margin: 8% 0px 8% 0px;
+}
+
+.skillcontent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+.bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.barHead,
+.barPercert {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.basebar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.portbar {
+    margin-left: 0.1rem;
+    width: 82%;
+    height: 0.3rem;
+    background-color: greenyellow;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.landbar {
+    margin-left: 0.1rem;
+    width: 94%;
+    height: 0.3rem;
+    background-color: greenyellow;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.wildbar {
+    margin-left: 0.1rem;
+    width: 43%;
+    height: 0.3rem;
+    background-color: greenyellow;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.editbar {
+    margin-left: 0.1rem;
+    width: 64%;
+    height: 0.3rem;
+    background-color: greenyellow;
+    border-radius: 10px;
+    position: absolute;
+}
+.myskill{
+    width: 100%;
+}
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    /* border: solid; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 40px; */
+    margin: 0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,red,blue);
+}
+.icon:hover .brands{
+    color: white;
+    animation: rotate 3s;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+#footer{
+    margin-top: 8%;
+}
+.copyright{
+    /* margin-top: 50px; */
+    text-align: center;
+    font-weight: 600;
+}
+.arrow{
+    float: right;
+    margin: -35px 20px 20px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:bisque;
+}
+::-webkit-scrollbar-thumb{
+    background-color:green;
+    border-radius: 10px;
+}
